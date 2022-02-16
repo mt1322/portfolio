@@ -1,0 +1,52 @@
+        /*let arr = [[null, null, null, null, null, null, null, null, null],
+                  [null, null, null, null, null, null, null, null, null],
+                  [null, null, null, null, null, null, null, null, null],
+                  [null, null, null, null, null, null, null, null, null],
+                  [null, null, null, null, null, null, null, null, null],
+                  [null, null, null, null, null, null, null, null, null],
+                  [null, null, null, null, null, null, null, null, null],
+                  [null, null, null, null, null, null, null, null, null],
+                  [null, null, null, null, null, null, null, null, null]];
+        
+        while (true) {
+            let count = 0;
+            let nextH = 0;
+            let nextV = 0;
+            for (let i = 0; i < 9; i++) {
+                for (let j = 0; j < 9; j++)
+                    arr[i][j] = Math.floor(Math.random()*9 + 1);
+
+                if (arr[i].every((v, i, item) => item.indexOf(v) === i))
+                    count++;
+            }
+
+            for (let i = 0; i < 9; i++) {
+                let arr2 = (new Array(9)).fill(0);
+                let arr3 = (new Array(9)).fill(0);
+                for (let j = 0; j < 9; j++)
+                    arr2[j] = arr[j][i];
+
+                if (arr2.every((v, i2, item) => item.indexOf(v) === i2))
+                    count++;
+
+                for (let k = 0; k < 3; k++) {
+                    for (let l = 0; l < 3; l++) {
+                        arr3[3*k+l] = arr[k+nextV][l+nextH];
+                    }
+                }
+
+                if (arr3.every((v, i2, item) => item.indexOf(v) === i2))
+                    count++;
+
+                if (nextH >= 6){
+                    nextH = 0;
+                    nextV += 3;
+                }
+                console.log("loop");
+            }
+
+            if (count === 27) {
+                console.log(arr);
+                return;
+            }
+        }*/

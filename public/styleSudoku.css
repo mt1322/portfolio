@@ -1,0 +1,353 @@
+/* @media screen and (max-width:400px){
+    .button {
+        font-size: 3vw;
+        padding: 0.5vw 2vw;
+        color: black;
+        display: inline-block;
+        opacity: 0.8;
+        border: 0.2vw solid #000;
+        border-radius: 1vw;
+        position: relative;
+        z-index: 3;
+    }
+} */
+
+@media screen and (max-width:670px) {
+    /* .cell {
+        height:20%;
+        width: 4%;
+        margin-top: -200px;
+        position: relative;
+        z-index: 1;
+    } */
+
+    .sudoku-main img {
+        width: 10%;
+        margin: -7px 0 0 0 ;
+        position: relative;
+        z-index: 1;
+    }
+   
+    .button {
+        font-size: 5vw;
+        padding: 2vw 4vw;
+        color: black;
+        display: inline-block;
+        opacity: 0.8;
+        border: 0.2vw solid #000;
+        border-radius: 1vw;
+        position: relative;
+        z-index: 3;
+    }
+
+    .box-container img{
+        display: none;
+    }
+    .box-container2 img{
+        display: none;
+    }
+    .box-container3 img{
+        display: none;
+    }
+
+    .btn2 {
+        padding: 1vw 4vw;
+        margin: 0 200vw 0 0vw;
+        position: absolute;
+        top: 20vw;
+        font-size: 1vw;
+        color: white;
+        font-style: italic;
+        cursor: pointer;
+        border-right: 4px solid #555;
+        border-bottom: 10px solid #999;
+        border-left: 4px solid #ddd;
+        border-radius: 0;
+        text-shadow: -1px -1px 1px #ffffd9;
+    }
+
+    .level {
+        background-color: #09f;
+        margin-top: -3vw;
+        font-size: 1.5vw;
+        padding: 0.2vw 5vw;
+        position:absolute;
+        top: 3.5vw;
+        left: 50vw;
+        width: 12%;
+        white-space: nowrap;
+    }
+    
+    .top {
+        background-color: #09f;
+        margin-top: -3vw;
+        font-size: 1.5vw;
+        padding: 0.2vw 5vw;
+        position:absolute;
+        top: 3.5vw;
+        left: 75vw;
+        width: 15%;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (min-width:671px){
+    .sudoku-main img {
+        width: 4%;
+        margin: -7px 0 0 0 ;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .button {
+        font-size: 1.5vw;
+        padding: 0.5vw 1.2vw;
+        color: black;
+        display: inline-block;
+        opacity: 0.8;
+        border: 0.2vw solid #000;
+        border-radius: 1vw;
+        position: relative;
+        z-index: 3;
+    }
+
+    .box-container img{
+        padding-bottom: 6.5px;
+        width: 12vw;
+    }
+    .box-container2 img{
+        padding-bottom: 6.5px;
+        width: 12vw;
+    }
+    .box-container3 img{
+        padding-bottom: 6.5px;
+        width: 12vw;
+    }
+
+    .btn2 {
+        padding: 1vw 4vw;
+        margin: 0 200vw 0 0vw;
+        position: absolute;
+        top: 20vw;
+        display: block;
+        font-size: 2vw;
+        color: white;
+        font-style: italic;
+        cursor: pointer;
+        border-right: 4px solid #555;
+        border-bottom: 10px solid #999;
+        border-left: 4px solid #ddd;
+        border-radius: 0;
+        text-shadow: -1px -1px 1px #ffffd9;
+    }
+
+    .level {
+        background-color: #09f;
+        margin-top: -3vw;
+        font-size: 1.5vw;
+        padding: 0.2vw 2vw;
+        position:absolute;
+        top: 3.5vw;
+        left: 60vw;
+        width: 8%;
+    }
+    
+    .top {
+        background-color: #09f;
+        margin-top: -3vw;
+        font-size: 1.5vw;
+        padding: 0.2vw 2vw;
+        position:absolute;
+        top: 3.5vw;
+        left: 75vw;
+        width: 8%;
+    }
+
+}
+
+
+.sudoku-header {
+    float: left;
+    border-bottom: 3px double black;
+    width: 80%;
+    margin-left: 10vw;
+}
+
+.sudoku-header a {
+    float: right;
+    margin-top: -3vw;
+    font-size: 1.5vw;
+    padding: 0.2vw 2vw;
+    background-color: #09f;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sudoku-header h1 {
+    margin-left: 10px;
+}
+
+.sudoku-title {
+    margin: 0 0 0 100px;
+}
+
+.sudoku-container {
+    margin-top: 15px;
+    position: relative;
+}
+
+.sudoku-container2 {
+    position: relative;
+}
+
+.sudoku-main {
+    text-align: center;
+}
+
+.box-container {
+    position: absolute;
+    top: -0.5%;
+    left: 31.9%;
+    display: flex;
+    flex-direction: column; 
+    z-index: 2;
+    pointer-events: none;
+}
+
+.box-container2 {
+    position: absolute;
+    top: -0.5%;
+    left: 43.9%;
+    display: flex;
+    flex-direction: column;  
+    z-index: 2;
+    pointer-events: none;
+}
+
+.box-container3 {
+    position: absolute;
+    top: -0.5%;
+    left: 55.9%;
+    display: flex;
+    flex-direction: column;   
+    z-index: 2;
+    pointer-events: none;
+}
+
+.count {
+    display: none;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.button:active {
+    top: 7px;
+    box-shadow: none;   
+}
+
+.number {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: 12px;
+}
+
+.btn {
+    padding: 1vw 4vw;
+    margin: 0 200vw 0 0vw;
+    position: absolute;
+    top: 20vw;
+    display: block;
+    font-size: 2vw;
+    color: white;
+    font-style: italic;
+    cursor: pointer;
+    border-right: 4px solid #555;
+    border-bottom: 10px solid #999;
+    border-left: 4px solid #ddd;
+    border-radius: 0;
+    text-shadow: -1px -1px 1px #ffffd9;
+}
+
+/* .btn:active {
+    position: absolute;
+    top: 20.5vw; 
+} */
+
+.easy {
+    background-color: green;
+    /*left: 20%;*/
+    left: 16vw;
+}
+
+.normal {
+    background-color: blue;
+    /*left: 40.7%;*/
+    left: 41vw;
+}
+
+.hard {
+    background-color: red;
+    /*left: 64.5%;*/
+    left: 70vw;
+}
+
+.answer {
+    background-color: yellow;
+    top: -20vw;
+    left: 70vw;
+    color: black;
+}
+
+.answer:active {
+    top: -20.2vw; 
+}
+
+.correct {
+    font-size: 5vw;
+    font-weight: bold;
+    position: absolute;
+    top: -45vw;
+    left: 70vw;
+}
+
+.undo {
+    background-color: orange;
+    top: -30vw;
+    left: 70vw;
+    color: black;
+}
+
+.undo:active {
+    top: -30.2vw; 
+}
+
+.rot {
+    transform: rotateX(360deg);
+    transition: all 0.75s;
+}
+
+@keyframes confettiRotate{
+    0% {
+        
+    }
+  
+    100% {
+        transform: rotate3d(1, 1, 0.2, 360deg);
+
+    }
+}
+
+@keyframes confettiFall{
+    0% {
+        
+    }
+  
+    100% {
+        transform: translateY(900px);
+
+    }
+}

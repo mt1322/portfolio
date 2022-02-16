@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 75%;
+  height: 3000px;
+  margin: 0 auto;
+  background-color: rgb(192, 175, 150);
+ }
+
+.wrapper {
+  height: 80px;
+  width: 100%;
+  background-color: rgba(0, 114, 114, 1);
+  position: fixed;
+}
+
+.left-header {
+  float: left;
+  margin: 20px 10px;
+  line-height: 10px;
+}
+
+.right-header {
+  float: right;
+  margin: 20px 40px 20px 0;
+  line-height: 10px;
+  font-size: 40px;
+}
+
+.menu-icon {
+  display: inline-block;
+  width: 20px;
+  cursor: pointer;
+}
+
+.menu-icon2 {
+  color: white;
+  display: inline-block;
+  width: 20px;
+  cursor: pointer;
+}
+
+.sidePanel {
+  background-color: rgba(50, 114, 114, 1);
+  height: 120%;
+  width: 0%;
+  position: absolute;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  animation-name: fadeInAnime;/*1で解説*/
+  animation-fill-mode:forwards;/*2で解説*/
+  animation-duration:1s;/*3で解説*/
+  /*animation-iteration-count:infinite;/*4で解説*/
+  animation-timing-function:ease;/*5で解説*/
+  animation-direction:normal;/*7で解説*/
+  width: 10%;
+}
+
+.sidePanel a{
+  color: white;
+}
+
+  /*1で解説*/
+  @keyframes fadeInAnime{
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      width: 25%
+    }
+  }
+
+  .sidePanel2 {
+    background-color: rgba(114, 114, 114, 1);
+    height: 120%;
+    width: 0%;
+    position: absolute;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    animation-name: fadeInAnime2;/*1で解説*/
+    animation-fill-mode:forwards;/*2で解説*/
+    animation-duration:1s;/*3で解説*/
+    /*animation-iteration-count:infinite;/*4で解説*/
+    animation-timing-function:ease;/*5で解説*/
+    animation-direction:normal;/*7で解説*/
+    color: white;
+  }
+
+  .sidePanel2 a {
+    color: white;
+    animation-name: fadeInAnime2;/*1で解説*/
+    animation-fill-mode:forwards;/*2で解説*/
+    animation-duration:0.3s;/*3で解説*/
+  }
+
+  @keyframes fadeInAnime2{
+    0% {
+      opacity: 1;
+      width: 25%
+      
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+
+.links {
+  margin-top:77px;
+}
+
+.link {
+  font-size: 35px;
+  margin-left: 20px;
+  line-height: 50px;
+  text-decoration: none;
+  white-space: nowrap
+}
+
+.main-upper {
+  /*background-image: url(digital.jpg);*/
+  background-size: cover;
+  color: white;
+  text-align: center;
+  height: 1000px;
+  margin-bottom: 20px;
+}
+
+.main {
+  border-bottom: #ccc 2px solid;
+  height: 300px;
+  text-align: center;
+}
+
+.items {
+  margin-bottom: 30px;
+}
+
+.item {
+  display: inline-block;
+  width: 20%;
+  margin-right: 25px;
+  text-align: center;
+  box-shadow: 0 0 6px #e8e8e8;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.clear {
+  clear: left;
+}
+
+footer p {
+  margin-left: 20px;
+} 
