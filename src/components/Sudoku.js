@@ -247,6 +247,7 @@ class Sudoku extends React.Component {
                 display: inline-block;
                 animation: confettiRotate 0.5s linear infinite, confettiFall 3s linear infinite;
                 animation-delay: ${Math.random()*5}s;
+                opacity: 0;
                 `
                 confetties.push(<CONF class="confetti"></CONF>);
             }

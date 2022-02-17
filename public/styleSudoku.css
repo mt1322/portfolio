@@ -89,6 +89,14 @@
         width: 15%;
         white-space: nowrap;
     }
+
+    .correct {
+        font-size: 5vw;
+        font-weight: bold;
+        position: absolute;
+        top: -0vw;
+        left: 40vw;
+    }
 }
 
 @media screen and (min-width:671px){
@@ -161,6 +169,14 @@
         top: 3.5vw;
         left: 75vw;
         width: 8%;
+    }
+
+    .correct {
+        font-size: 5vw;
+        font-weight: bold;
+        position: absolute;
+        top: -45vw;
+        left: 70vw;
     }
 
 }
@@ -306,13 +322,6 @@
     top: -20.2vw; 
 }
 
-.correct {
-    font-size: 5vw;
-    font-weight: bold;
-    position: absolute;
-    top: -45vw;
-    left: 70vw;
-}
 
 .undo {
     background-color: orange;
@@ -343,7 +352,7 @@
 
 @keyframes confettiFall{
     0% {
-        
+        opacity: 1;
     }
   
     100% {
