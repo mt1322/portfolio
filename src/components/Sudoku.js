@@ -373,7 +373,7 @@ class Sudoku extends React.Component {
                 {level}
                 {mainGame}
                 {startButton}
-                {this.state.music}
+                {/* {this.state.music} */}
             </div>
         );
     }
